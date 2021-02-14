@@ -9,7 +9,7 @@ const itemSchema = new Schema({
 	},
 	brand: String,
 	description: String,
-	prize: {
+	price: {
 		type: Number,
 		required: true
 	},

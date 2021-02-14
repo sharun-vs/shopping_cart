@@ -11,5 +11,7 @@ const cartSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		ref: 'Item'
 	}],
-	total_prize: Number
+	totalPrize: Number
 });
+
+module.exports = mongoose.model('Cart', cartSchema);
