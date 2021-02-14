@@ -15,7 +15,12 @@ const userSchema = new Schema({
 	password: {
 		type: String,
 		required: true
-	}
+	},
+	sellingItems: [
+	{
+		type: Schema.Types.ObjectId,
+		ref: 'Item'
+	}]
 });
 
 module.exports = mongoose.model('User', userSchema)

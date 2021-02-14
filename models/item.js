@@ -12,6 +12,10 @@ const itemSchema = new Schema({
 	prize: {
 		type: Number,
 		required: true
+	},
+	seller: {
+		type: Schema.Types.ObjectId,
+		ref: 'User'
 	}
 });
 
